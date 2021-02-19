@@ -4,7 +4,7 @@ This is a desktop application to help you manage your inventory through sales an
 
  The technologies used were JavaFX framework for the UI development and Hibernate for database connection.
 
-![](.\readme_images\Dashboard.png)
+![](readme_images/Dashboard.png)
 
 
 
