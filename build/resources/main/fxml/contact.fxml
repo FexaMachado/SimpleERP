@@ -18,7 +18,7 @@
         <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <buttons>
                 <Button layoutX="450.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#providerClicked" text="Trocar Fornecedor" />
-                <Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteClicked" text="Apagar" />
+                <!--<Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteClicked" text="Apagar" />-->
                 <Button layoutX="450.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#newButtonClicked" text="Novo" />
             </buttons>
         </ButtonBar>
