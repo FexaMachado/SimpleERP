@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ContactUIController">
+    <center>
+        <TableView fx:id="contactTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nome" />
+                <TableColumn fx:id="addressColumn" prefWidth="75.0" text="Morada" />
+                <TableColumn fx:id="telephoneColumn" prefWidth="75.0" text="Telefone" />
+                <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="fornecedorColumn" prefWidth="75.0" text="Fornecedor" />
+            </columns>
+        </TableView>
+    </center>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button layoutX="450.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#providerClicked" text="Trocar Fornecedor" />
+                <Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteClicked" text="Apagar" />
+                <Button layoutX="450.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#newButtonClicked" text="Novo" />
+            </buttons>
+        </ButtonBar>
+    </top>
+    <bottom>
+    </bottom>
+</BorderPane>

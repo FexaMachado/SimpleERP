@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ItemUIController">
+    <center>
+        <TableView fx:id="itemTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nome">
+                </TableColumn>
+                <TableColumn fx:id="stockColumn" prefWidth="75.0" text="Stock">
+                </TableColumn>
+                <TableColumn fx:id="reservedColumn" prefWidth="75.0" text="Reservado" />
+            </columns>
+        </TableView>
+    </center>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        </ButtonBar>
+    </top>
+    <bottom>
+    </bottom>
+</BorderPane>

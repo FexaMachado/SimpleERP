@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ProductUIController">
+    <center>
+        <TableView fx:id="productTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#tableClicked" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nome">
+                </TableColumn>
+                <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Preço">
+                </TableColumn>
+                <TableColumn fx:id="costColumn" prefWidth="75.0" text="Custo" />
+            </columns>
+        </TableView>
+    </center>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="activateButton" layoutX="203.0" layoutY="18.0" mnemonicParsing="false" onAction="#activateClicked" text="Desativar" />
+                <Button fx:id="deleteButton" layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteClicked" text="Apagar" />
+                <Button layoutX="450.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#newButtonClicked" text="Novo" />
+                <CheckBox fx:id="toogleDeactivated" mnemonicParsing="false" onAction="#toggleDeactivated" text="Mostrar desativados" />
+            </buttons>
+        </ButtonBar>
+    </top>
+    <bottom>
+    </bottom>
+</BorderPane>
