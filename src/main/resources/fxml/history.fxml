@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.HistoryUIController">
+    <center>
+        <TableView fx:id="transactionTable" onMouseClicked="#transactionTableClicked" prefWidth="400.0"
+                   BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="contactColumn" prefWidth="75.0" text="Cliente/Fornecedor"/>
+                <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Preço Total"/>
+                <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Data"/>
+            </columns>
+            <BorderPane.margin>
+                <Insets top="17.0"/>
+            </BorderPane.margin>
+        </TableView>
+    </center>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#searchSalesClicked"
+                        text="Procurar Vendas"/>
+                <Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#searchPurchasesClicked"
+                        text="Procurar Compras"/>
+                <Button layoutX="535.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteClicked"
+                        text="Apagar"/>
+            </buttons>
+        </ButtonBar>
+    </top>
+    <bottom>
+    </bottom>
+    <right>
+        <BorderPane prefWidth="600.0" BorderPane.alignment="CENTER">
+            <center>
+                <TableView fx:id="transactionItemTable">
+                    <columns>
+                        <TableColumn fx:id="itemColumn" prefWidth="75.0" text="Item"/>
+                        <TableColumn fx:id="itemAmountColumn" prefWidth="75.0" text="Quantidade"/>
+                        <TableColumn fx:id="itemPriceColumn" prefWidth="75.0" text="Preço/Unidade"/>
+                        <TableColumn fx:id="itemTotalPriceColumn" prefWidth="75.0" text="Preço"/>
+                    </columns>
+                </TableView>
+            </center>
+            <top>
+                <Label text="Itens da transacao" BorderPane.alignment="CENTER"/>
+            </top>
+        </BorderPane>
+    </right>
+</BorderPane>

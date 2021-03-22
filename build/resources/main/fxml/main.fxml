@@ -35,5 +35,10 @@
                 <fx:include source="purchase.fxml"/>
             </content>
         </Tab>
+        <Tab text="Historico">
+            <content>
+                <fx:include source="history.fxml"/>
+            </content>
+        </Tab>
     </tabs>
 </TabPane>

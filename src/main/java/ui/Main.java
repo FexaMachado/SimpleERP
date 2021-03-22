@@ -25,7 +25,6 @@ public class Main extends Application {
 
         primaryStage.setTitle("Simple ERP");
         primaryStage.setScene(new Scene(root));
-        primaryStage.setResizable(false);
         primaryStage.show();
 
         primaryStage.setOnCloseRequest(event -> entityManagerFactory.close());

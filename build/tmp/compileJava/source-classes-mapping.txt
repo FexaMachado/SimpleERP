@@ -1,25 +1,26 @@
 domain/Product.java
  domain.Product
-util/DateUtils.java
- util.DateUtils
+util/DataRefreshable.java
+ util.DataRefreshable
 ui/SaleUIController.java
  ui.SaleUIController
-controller/SaleController.java
- controller.SaleController
-controller/ProductController.java
- controller.ProductController
+repository/BaseRepository.java
+ repository.BaseRepository
+ui/ProductUIController.java
+ ui.ProductUIController
+ ui.ProductUIController$1
 repository/SaleRepository.java
  repository.SaleRepository
 repository/PurchaseRepository.java
  repository.PurchaseRepository
-domain/Transaction.java
- domain.Transaction
+domain/SaleItem.java
+ domain.SaleItem
 ui/ContactUIController.java
  ui.ContactUIController
-controller/PurchaseController.java
- controller.PurchaseController
-controller/DashboardController.java
- controller.DashboardController
+repository/ContactRepository.java
+ repository.ContactRepository
+domain/Sale.java
+ domain.Sale
 util/DataRefresher.java
  util.DataRefresher
  util.DataRefresher$Type
@@ -35,34 +36,37 @@ ui/PurchaseUIController.java
  ui.PurchaseUIController
 ui/AddDialog.java
  ui.AddDialog
-controller/ContactController.java
- controller.ContactController
+ui/Dashboard.java
+ ui.Dashboard
 domain/Purchase.java
  domain.Purchase
-ui/Main.java
- ui.Main
+domain/Contact.java
+ domain.Contact
 repository/BalanceHistoryRepository.java
  repository.BalanceHistoryRepository
 repository/ItemRepository.java
  repository.ItemRepository
 repository/ProductRepository.java
  repository.ProductRepository
-domain/SaleItem.java
- domain.SaleItem
-util/DataRefreshable.java
- util.DataRefreshable
+controller/PurchaseController.java
+ controller.PurchaseController
+domain/Transaction.java
+ domain.Transaction
+controller/ContactController.java
+ controller.ContactController
+ui/Main.java
+ ui.Main
 controller/ItemController.java
  controller.ItemController
-repository/ContactRepository.java
- repository.ContactRepository
-ui/Dashboard.java
- ui.Dashboard
-repository/BaseRepository.java
- repository.BaseRepository
-domain/Contact.java
- domain.Contact
-domain/Sale.java
- domain.Sale
-ui/ProductUIController.java
- ui.ProductUIController
- ui.ProductUIController$1
+controller/SaleController.java
+ controller.SaleController
+controller/ProductController.java
+ controller.ProductController
+controller/DashboardController.java
+ controller.DashboardController
+util/DateUtils.java
+ util.DateUtils
+controller/HistoryController.java
+ controller.HistoryController
+ui/HistoryUIController.java
+ ui.HistoryUIController

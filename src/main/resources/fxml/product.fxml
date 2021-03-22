@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ProductUIController">
     <center>
-        <TableView fx:id="productTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#tableClicked" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+        <TableView fx:id="productTable" onMouseClicked="#tableClicked" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
             <columns>
                 <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nome">
                 </TableColumn>
